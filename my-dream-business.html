@@ -32,5 +32,27 @@
         </ol>
         <h3>Location:</h3>
         <a href="https://maps.app.goo.gl/9GzLf5t4pN3veqPD7">Purple Bottle Coffee</a>
+        <br><br>
+        <form action="/submit-order" method="post">
+            <fieldset>
+                <legend><b>Choose a Drink</b></legend>
+                <input type="radio" name="drink" value="americano" id="americano" /><label for="americano">Americano</label><br>
+                <input type="radio" name="drink" value="lavender-americano" id="lavender-americano" /><label for="lavender-americano">Lavender Americano</label><br>
+                <input type="radio" name="drink" value="latte" id="latte" /><label for="latte">Latte</label><br>
+                <input type="radio" name="drink" value="plum-latte" id="plum-latte" /><label for="plum-latte">Plum Latte</label><br>
+                <input type="radio" name="drink" value="matcha" id="matcha" /><label for="matcha">Matcha</label><br>
+                <input type="radio" name="drink" value="grape-matcha" id="grape-matcha" /><label for="grape-matcha">Grape Matcha</label>
+            </fieldset>
+            <fieldset>
+                <legend><b>Hot or Iced</b></legend>
+                <input type="radio" name="temperature" value="hot" id="hot" /><label for="hot">Hot</label>
+                <input type="radio" name="temperature" value="iced" id="iced" /><label for="iced">Iced</label>
+            </fieldset>
+            <fieldset>
+                <legend><b>Quantity</b></legend>
+                <input type="number" name="quantity" value="1" />
+            </fieldset>
+            <button type="submit">Order</button>
+        </form>
     </body>
 </html>
